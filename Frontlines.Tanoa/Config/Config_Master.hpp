@@ -1,6 +1,6 @@
 class Settings {
 	zeusUIDs[] = { //add zeus UIDs here to be auto-assigned zeus and be given all ACE actions for Frontlines
-		"76561198071007604"
+		"76561198029918230"
 	};
 
 	difficultyModifier = 1; //change this to increase/decrease the number of enemies you face, recommended 0.5-2

@@ -1,109 +1,103 @@
 /*
-	Faction: CSAT
+	Faction: AAF
 	Author: Dom
 	Requires: None
 */
 class Opfor_Setup {
 	opforSquads[] = {
 		{
-			"O_Soldier_SL_F",
-			"O_Soldier_TL_F",
-			"O_Soldier_TL_F",
-			"O_medic_F",
-			"O_engineer_F",
-			"O_Soldier_LAT_F",
-			"O_Sharpshooter_F",
-			"O_HeavyGunner_F",
-			"O_Soldier_F"
+			"I_Soldier_SL_F",
+			"I_Soldier_TL_F",
+			"I_Soldier_TL_F",
+			"I_medic_F",
+			"I_engineer_F",
+			"I_Soldier_LAT_F",
+			"I_Soldier_M_F",
+			"I_Soldier_AR_F",
+			"I_soldier_F"
 		},
 		{
-			"O_Soldier_SL_F",
-			"O_Soldier_TL_F",
-			"O_Soldier_TL_F",
-			"O_medic_F",
-			"O_engineer_F",
-			"O_Soldier_LAT_F",
-			"O_Sharpshooter_F",
-			"O_HeavyGunner_F",
-			"O_Soldier_F",
-			"O_Soldier_LAT_F",
-			"O_HeavyGunner_F"
+			"I_Soldier_SL_F",
+			"I_Soldier_TL_F",
+			"I_Soldier_TL_F",
+			"I_medic_F",
+			"I_engineer_F",
+			"I_Soldier_AT_F",
+			"I_Soldier_AT_F",
+			"I_Soldier_AR_F",
+			"I_Soldier_LAT_F"
 		},
 		{
-			"O_Soldier_SL_F",
-			"O_Soldier_TL_F",
-			"O_Soldier_LAT_F",
-			"O_Soldier_AA_F",
-			"O_Soldier_AA_F",
-			"O_medic_F",
-			"O_HeavyGunner_F",
-			"O_Soldier_LAT_F",
-			"O_Soldier_F"
+			"I_Soldier_SL_F",
+			"I_Soldier_TL_F",
+			"I_Soldier_LAT_F",
+			"I_Soldier_AA_F",
+			"I_Soldier_AA_F",
+			"I_medic_F",
+			"I_Soldier_AR_F",
+			"I_Soldier_LAT_F",
+			"I_soldier_F"
 		},
 		{
-			"O_Soldier_SL_F",
-			"O_Soldier_TL_F",
-			"O_Soldier_TL_F",
-			"O_medic_F",
-			"O_engineer_F",
-			"O_Soldier_AT_F",
-			"O_Soldier_AT_F",
-			"O_HeavyGunner_F",
-			"O_Soldier_LAT_F"
+			"I_Soldier_SL_F",
+			"I_Soldier_TL_F",
+			"I_Soldier_TL_F",
+			"I_medic_F",
+			"I_engineer_F",
+			"I_Soldier_LAT_F",
+			"I_Soldier_M_F",
+			"I_Soldier_AR_F",
+			"I_soldier_F",
+			"I_Soldier_LAT_F",
+			"I_Soldier_AR_F"
 		}
 	};
 
-	opforOfficer = "O_officer_F";
-	opforPilot = "O_helipilot_F";
-	opforMortar = "O_Mortar_01_F";
+	opforOfficer = "I_officer_F";
+	opforPilot = "I_helipilot_F";
+	opforMortar = "I_Mortar_01_F";
 	opforStatics[] = { //HMGs, AT etc
-		"O_HMG_01_high_F",
-		"O_GMG_01_high_F",
-		"O_static_AA_F",
-		"O_static_AT_F"
+		"I_HMG_01_high_F",
+		"I_GMG_01_high_F",
+		"I_static_AA_F",
+		"I_static_AT_F"
 	};
 
-	opforSupplyTruck = "O_Truck_03_repair_F";
-	opforFuelTruck = "O_Truck_03_fuel_F";
-	opforAmmoTruck = "O_Truck_03_ammo_F";
-	opforArtilleryVehicle = "O_MBT_02_arty_F";
+	opforSupplyTruck = "I_Truck_02_box_F";
+	opforFuelTruck = "I_Truck_02_fuel_F";
+	opforAmmoTruck = "I_Truck_02_ammo_F";
+	opforArtilleryVehicle = "I_Truck_02_MRL_F";
 
 	//if the vehicle does not belong to the faction naturally, enclose in {} and add ,true
 	opforLightVehicles[] = {
-		"O_MRAP_02_hmg_F",
-		"O_MRAP_02_gmg_F",
-		"O_LSV_02_armed_F",
-		"O_LSV_02_AT_F"
+		"I_MRAP_03_hmg_F",
+		"I_MRAP_03_gmg_F",
+		"I_LT_01_scout_F"
 	};
 
 	opforMediumVehicles[] = {
-		"O_APC_Tracked_02_cannon_F",
-		"O_APC_Tracked_02_AA_F"
+		"I_APC_tracked_03_cannon_F",
+		"I_APC_Wheeled_03_cannon_F",
+		"I_LT_01_AT_F",
+		"I_LT_01_cannon_F"
 	};
 
 	opforHeavyVehicles[] = {
-		"O_MBT_02_cannon_F",
-		"O_MBT_04_cannon_F",
-		"O_MBT_04_command_F"
+		"I_MBT_03_cannon_F"
 	};
 
 	opforTroopCarriers[] = {
-		"O_Truck_03_transport_F",
-		"O_Truck_03_covered_F",
-		"O_Truck_02_covered_F",
-		"O_Truck_02_transport_F"
+		"I_Truck_02_covered_F",
+		"I_Truck_02_transport_F"
 	};
 
 	opforAAVehicles[] = {
-		"O_APC_Tracked_02_AA_F",
-		"O_T_APC_Tracked_02_AA_ghex_F"
+		"I_LT_01_AA_F"
 	};
 
 	opforAttackHelicopters[] = {
-		"O_Heli_Attack_02_F",
-		"O_Heli_Attack_02_black_F",
-		"O_Heli_Light_02_F",
-		"O_Heli_Light_02_v2_F"
+		"I_Heli_light_03_F",
+		"I_Heli_light_03_dynamicLoadout_F"
 	};
 
 	opforMines[] = {
